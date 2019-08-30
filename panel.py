@@ -14,7 +14,7 @@ panelName = "panel.kicad_pcb"
 usrPanelName = input("File name of project to be panelised, do not include extension: \nLeave blank for default 'panel': ")
 
 if usrPanelName:
-    panelName = "{0}.kicad_pcb".format(panelName)
+    panelName = "{0}.kicad_pcb".format(usrPanelName)
 
 # Concat to get in format for command line
 fullPath = "\"{0}\{1}\"".format(directory,panelName)
@@ -32,7 +32,7 @@ while(True):
     usrHoleDia = input("Hole Diameter, currently {0}mm: ".format(holeDia))
     usrHoleInset = input("Hole Inset, currently {0}. Enter inset, flush, or a custom number: ".format(holeInsetWord))
     usrHolePitch = input("Hole Pitch, currently {0}mm: ".format(pitch))
-    usrTabWidth = input("Tab Width, currently {0}mm: ".format(tabWidth))
+    usrTabWidth = input("Tab Width, default 2.5mm: ")
 
     if usrFilletRadius:
         filletRadius = usrFilletRadius
