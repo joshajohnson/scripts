@@ -17,3 +17,7 @@ AutoHotKey script to move keys around on my desktop's keyboard.
 ### josh96
 
 QMK files for a RGB96 keyboard, configured to my liking.
+
+### QWERTY-colemak-xps
+
+AHK files to convert a windows laptop to colemak, with some extra tweaks such as fn+caps = del and VIM 'JKLM' navigation. 
