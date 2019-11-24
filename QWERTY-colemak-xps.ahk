@@ -92,7 +92,7 @@ Capslock::Backspace
 }
 
 
-<!:::
+<!;::
 {
 	Send {Right}
 	return
