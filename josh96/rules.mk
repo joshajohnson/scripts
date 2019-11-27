@@ -19,6 +19,7 @@ F_CPU = 16000000
 #
 # Target architecture (see library "Board Types" documentation).
 ARCH = AVR8
+BOOTLOADER = atmel-dfu
 
 # Input clock frequency.
 #     This will define a symbol, F_USB, in all source code files equal to the
