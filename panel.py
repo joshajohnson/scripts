@@ -1,3 +1,5 @@
+# This has only been tested in Windows 10
+
 import os
 # Path of the ku.jar file
 kuPath = "\"C:\Program Files (x86)\KiCadPaneliser\ku.jar\""

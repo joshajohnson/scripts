@@ -68,15 +68,12 @@ n::k
 Capslock::Backspace
 
 ; Josh's strange shit
-
-; LAlt + neio to left/down/up/right keys
-
+; LAlt + neio to left/down/up/right keys (right hand JKL;)
 <!j::
 {
 	Send {Left}
 	return
 }
-
 
 <!k::
 {
@@ -84,13 +81,11 @@ Capslock::Backspace
 	return
 }
 
-
 <!l::
 {
 	Send {Up}
 	return
 }
-
 
 <!;::
 {
@@ -99,7 +94,6 @@ Capslock::Backspace
 }
 
 ; Map LAlt + Backspace to Delete
-
 <!BS::
 {
 	Send {Delete}
