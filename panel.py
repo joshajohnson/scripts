@@ -1,25 +1,12 @@
-# This has only been tested in Windows 10
+#!/bin/python3
 
 import os
-# Path of the ku.jar file
-kuPath = "\"C:\Program Files (x86)\KiCadPaneliser\ku.jar\""
+import sys
 
-# Get file directory
-directory = os.path.dirname(os.path.realpath(__file__))
-usrDirectory = input("File directory of board to be panelised. Leave blank for current dir: ")
-
-if usrDirectory:
-    directory = usrDirectory
-
-# Get file name
-panelName = "panel.kicad_pcb"
-usrPanelName = input("File name of project to be panelised, do not include extension: \nLeave blank for default 'panel': ")
-
-if usrPanelName:
-    panelName = "{0}.kicad_pcb".format(usrPanelName)
-
-# Concat to get in format for command line
-fullPath = "\"{0}\{1}\"".format(directory,panelName)
+# Get pcb file name/path
+filename=sys.argv[1]
+project_path = os.path.abspath(os.path.split(filename)[0])
+fullPath = project_path + filename
 
 # Mouse bite specifications
 filletRadius = 1.2
@@ -59,13 +46,11 @@ while(True):
     if usrTabWidth:
         tabWidth = usrTabWidth
 
-    # compose the command line string
-    cmd = "java -jar {0} pcb --file={1} panel --fillet={2} --hole={3} --inset={4} --pitch={5} --width={6}".format(kuPath,fullPath,filletRadius,holeDia,holeInset,pitch,tabWidth)
+    # compose the command line string, may need to change dir for kicadutil.jar
+    cmd = "java -jar ~/Documents/kicad/kicadutil.jar pcb --file={} panel --fillet={} --hole={} --inset={} --pitch={} --width={}".format(fullPath,filletRadius,holeDia,holeInset,pitch,tabWidth)
 
     # run the command
     os.system(cmd)
 
     print("\nLets do it again!\n")
-
-
 
