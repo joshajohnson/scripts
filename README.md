@@ -33,3 +33,7 @@ Autokey files to do remapping of additional key combinations for my Colemak Keyb
 ### autokey-macro-keyboard
 
 Autokey files to allow use of the macro keyboard in Linux, however this is a bit buggy, not sure why.
+
+### kicad-things.md
+
+As the name suggests, a bunch of KiCad stuff I don't want to forget.
