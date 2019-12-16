@@ -20,6 +20,10 @@ AutoHotKey script to do key remapping on my [Macro Keyboard](https://github.com/
 
 AHK files to convert a windows laptop to colemak, with some extra tweaks such as fn+caps = del and right hand arrow control.
 
+### colemak-remap-ext-keybord.ahk
+
+AHK files to implement fn+caps = del and right hand arrow control when the keybord inputs are already colemak without higher levels of control. 
+
 ### josh96
 
 QMK files for a RGB96 keyboard, configured to my liking.
