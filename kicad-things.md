@@ -14,3 +14,7 @@ Assorted list of KiCad related things I don't want to forget!
 
 [Sheet Rearanger](https://github.com/KarlZeilhofer/KiCadSheetRearranger)
 
+[Dark Mode](https://github.com/pointhi/kicad-color-schemes)
+
+[Panelisation](https://gitlab.com/dren.dk/kicad-util)
+
