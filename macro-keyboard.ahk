@@ -38,7 +38,7 @@ l::^r  ; Move relative
 ; Row 4
 ; m::
 ; n::
-; p::
+; o::
 
 ; Encoder 1
 ; Clockwise
@@ -75,9 +75,9 @@ h::RButton
 ; k::
 ; l::
 ; Row 4
-; m::
+ m::<#+s ; Snipping Tool
 ; n::
-; p::
+; o::
 
 ; Encoder 1
 ; Clockwise
