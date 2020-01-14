@@ -1,19 +1,9 @@
-; Colemak layout for AutoHotkey (MS Windows)
-; 2006-01-01 Shai Coleman, http://colemak.com/ . Public domain.
-; See http://www.autohotkey.com/ for more information
-
-; For this to work you have to make sure that the US (QWERTY) layout is installed,
-; that is set as the default layout, and that it is set as the current layout.
-; Otherwise some of the key mappings will be wrong.
-;
-; This is mainly useful for those who don't have privileges to install a new layout
-; This doesn't support the international features of the Colemak layout.
-
 #SingleInstance force
 #NoEnv ; Recommended for performance and compatibility with future AutoHotkey releases.
 SendMode Input ; Recommended for new scripts due to its superior speed and reliability.
 SetTitleMatchMode 3  ; Exact matching to avoid confusing T/B with Tab/Backspace.
 
+; QWERTY to Colemak Mapping
 ;`::`
 ;1::1
 ;2::2
@@ -67,35 +57,39 @@ n::k
 
 Capslock::Backspace
 
-; Josh's strange shit
-; LAlt + neio to left/down/up/right keys (right hand JKL;)
-<!j::
+; Josh's strange stuff
+; Space + neio to left/down/up/right keys (right hand JKL;)
+Space & j::
 {
 	Send {Left}
 	return
 }
 
-<!k::
+Space & k::
 {
 	Send {Down}
 	return
 }
 
-<!l::
+Space & l::
 {
 	Send {Up}
 	return
 }
 
-<!;::
+Space & `;::
 {
 	Send {Right}
 	return
 }
 
-; Map LAlt + Backspace to Delete
-<!BS::
+; Space + Backspace to Delete
+Space & CapsLock::
 {
 	Send {Delete}
 	return
 }
+
+; Without this, every time space is 
+; pressed by itself nothing happens 
+Space::Space
